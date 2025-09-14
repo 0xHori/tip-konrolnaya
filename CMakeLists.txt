@@ -3,4 +3,5 @@ project(tip_konrolnaya_1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(tip_konrolnaya_1 main.cpp)
+add_executable(tip_konrolnaya_1 main.cpp
+)
