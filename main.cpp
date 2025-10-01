@@ -1,5 +1,5 @@
 #include <iostream>
-#include "var1.h"
+#include "kr1/var1/task4.h"
 
 
 int main() {
