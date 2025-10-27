@@ -4,5 +4,5 @@ project(tip_konrolnaya_1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(tip_konrolnaya_1
-        kr3/var16/task3.cpp
+        kr2/var12/task3.cpp
 )

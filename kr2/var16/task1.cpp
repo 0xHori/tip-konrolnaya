@@ -6,7 +6,7 @@
 // Напишите программу, которая запрашивает у пользователя размер массива и заполняет его числами.
 // Затем выводит только те элементы, которые больше среднего значения.
 #include <iostream>
-#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -14,8 +14,10 @@ int main() {
     setlocale(LC_ALL, "Russia");
     srand(time(NULL));
 
-    int m;
+    unsigned int m;
     int x = 0;
+    cout << "Укажите размер массива: ";
+    cout << endl;
     cin >> m;
 
     // Создание динамического массива
@@ -25,19 +27,18 @@ int main() {
     for (int i = 0; i < m; i++) {
         arr[i] = rand() % 10;
     }
-    cout << endl;
 
-    /*
+
     // Вывод чисел, которые находятся в массиве
     for (int i = 0; i < m; i++) {
         cout << arr[i] << " ";
         x += arr[i];
     }
     cout << endl;
-    */
+
 
     double average = x / m;
-    // cout << average << endl;
+    cout << "Среднее значение: " << average << endl;
 
 
     // Вывод чисел, которые больше среднего значения

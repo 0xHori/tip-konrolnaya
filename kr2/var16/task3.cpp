@@ -11,37 +11,33 @@
 
 using namespace std;
 
-int* func(int m) {
+void func(unsigned int m) {
+    srand(time(NULL));
+
     int *arr = new int[m];
 
     for (int i = 0; i < m; i++) {
         arr[i] = rand() % 1000;
     }
 
-    return arr;
+    for (int i = 0; i < m; i++) {
+        cout << arr[i] << " ";
+    }
+
+    delete[] arr;
+
 }
 
 int main() {
     setlocale(LC_ALL, "Russia");
-    srand(time(NULL));
 
-    int m;
+    unsigned int m;
     cout << "Укажите размер одномерного массива:" << endl;
     cin >> m;
 
-    // Создание динамического массива
-    int* arr = func(m);
+    func(m);
 
-    // Вывод чисел, которые находятся в массиве
-    for (int i = 0; i < m; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-
-
-    // Освобождение памяти
-    delete[] arr;
-
-    // Очевидно
     return 0;
 }
+
+
