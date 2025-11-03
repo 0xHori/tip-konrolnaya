@@ -1,30 +1,8 @@
-//
-// Created by andrey on 24.10.2025.
-//
-
 #include <iostream>
+
 using namespace std;
 
-int main(void) {
-
-    time_t rawtime = time(NULL);
-
-    if (rawtime == -1) {
-
-        puts("The time() function failed");
-        return 1;
-    }
-
-    struct tm *ptm = localtime(&rawtime);
-
-    if (ptm == NULL) {
-
-        puts("The localtime() function failed");
-        return 1;
-    }
-
-    printf("The time is: %02d:%02d:%02d\n", ptm->tm_hour,
-           ptm->tm_min, ptm->tm_sec);
-
-    return 0;
+// Напишите ФУНКЦИЮ быстрого возведения в степень. Количество действий должно быть пропорционально двоичному логарифму n.
+long long f(long long a, int cnt = 0) {
+    ;
 }
